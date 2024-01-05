@@ -1,23 +1,32 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 import {useTheme} from "next-themes";
 import { useEffect, useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun, FaLinkedin, FaGithub } from "react-icons/fa";
 
-let  lang = require('../translation/en.json')  
-export default function Topbar() {  
+let  lang_en = require('../translation/en.json')
+let lang = lang_en
+export default function Topbar(props:any) {  
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   useEffect(() => {
     setMounted(true)    
   }, [])
-  if(!mounted) return null
-
+  if(!mounted) return null    
   return (
-    <Navbar>
-      <NavbarBrand>
-        Aqui va el logo
-      </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+    <Navbar isBordered>
+      <NavbarContent justify="start">
+        <NavbarItem>
+            <Link color="foreground" href="https://www.linkedin.com/in/kunven/" target="_blank">
+              <FaLinkedin size="25px"/>
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="https://github.com/Kunven" target="_blank">
+              <FaGithub size="25px"/>
+            </Link>
+          </NavbarItem>
+      </NavbarContent>
+      <NavbarContent className=" sm:flex gap-4" justify="end">
         <NavbarItem>
           <Link color="foreground" href="#home">
             {lang.home}
@@ -38,12 +47,12 @@ export default function Topbar() {
             {lang.contact}
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="mt-1">
           <Link color="foreground" href="#">
             {theme == 'dark' ? <FaMoon onClick={() => setTheme('light')}/>
              :  <FaSun onClick={() => setTheme('dark')}/>}
           </Link>                    
-        </NavbarItem>
+        </NavbarItem>        
       </NavbarContent>      
     </Navbar>
   )
