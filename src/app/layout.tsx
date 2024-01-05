@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='dark bg-gradient-to-r from-red-500 to-orange-500'>
       <head>
-      <title>Luis' Site!</title>
+      <title>Luis&apos; Site!</title>
       </head>
     <body>
       <Providers>

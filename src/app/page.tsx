@@ -15,8 +15,8 @@ export default function Home() {
         <Card id="home">          
           <CardBody className="grid grid-cols-2  content-center max-w-7xl mx-auto px-8 justify-center h-full">
             <div className="align-middle my-20">
-              <p className="text-6xl">Hello! My name is <span className="text-red-600">Luis</span> And I'm a FullStack Developer!</p>
-              <p className="text-3xl mt-5">I made this website as a way of showing my skills. I've developed web, desktop and mobile applications with various technologies over the years. I've also used cloud technologies like AWS and Google Cloud</p>
+              <p className="text-6xl">Hello! My name is <span className="text-red-600">Luis</span> And I&apos;m a FullStack Developer!</p>
+              <p className="text-3xl mt-5">I made this website as a way of showing my skills. I&apos;ve developed web, desktop and mobile applications with various technologies over the years. I&apos;ve also used cloud technologies like AWS and Google Cloud</p>
               <div className="my-4 -mx-1 flex space-x-2">
                 <Button
                   as={Link}
@@ -51,12 +51,12 @@ export default function Home() {
             <p className="text-6xl underline underline-offset-8 decoration-red-600">About me</p>  
             <div className="grid grid-cols-2  content-center mx-auto justify-center h-full">
               <p className="text-3xl mt-5">
-                I'm a very <span className="text-red-600">passionate</span> developer. I have been tinkering with computers and software since basically forever, so I basically <span className="text-red-600">love</span> what I do.
+                I&apos;m a very <span className="text-red-600">passionate</span> developer. I have been tinkering with computers and software since basically forever, so I basically <span className="text-red-600">love</span> what I do.
                 That love and passion allows me to be very <span className="text-red-600">detailed</span> when I write code to my clients.
               </p>
               <div className="grid grid-cols-1 grid-rows-2">
                 <p className="text-3xl mt-5 ml-5">
-                  This website was developed, and it's being maintained by me. It uses the following techologies:                  
+                  This website was developed, and it&apos;s being maintained by me. It uses the following techologies:                  
                 </p>
                 <p className="text-3xl mt-5 mx-auto grid grid-cols-5 grid-rows-1 gap-x-10">
                   <SiNextdotjs size="2em" title="Next"/>
@@ -74,7 +74,7 @@ export default function Home() {
             <p className="text-6xl underline underline-offset-8 decoration-red-600">Skills</p>
             <div className="grid grid-cols-1  content-center mx-auto justify-center h-full gap-4">
               <p className="text-3xl mt-5">
-                I've used a lot of frameworks, libraries, public APIs, technologies over the years. Here's a short list of the ones that I consider noteworthy.
+                I&apos;ve used a lot of frameworks, libraries, public APIs, technologies over the years. Here&apos;s a short list of the ones that I consider noteworthy.
               </p>              
               <div className="text-4xl mt-5 grid grid-cols-4 mx-auto grid-rows-1 gap-x-44 gap-y-12">
                   <SiReact size="2em" title="React"/><SiVuedotjs size="2em" title="Vue"/><SiAngularjs size="2em" title="Angular"/><SiNextdotjs size="2em" title="Next"/>                  
@@ -128,7 +128,7 @@ export default function Home() {
                     target="_blank"
                     color="default"
                   >
-                    Here's my CV!
+                    Here&apos;s my CV!
                   </Button>
 
                 </div>
