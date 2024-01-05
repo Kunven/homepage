@@ -2,7 +2,7 @@
 import Topbar from "../components/Topbar";
 import {Card, CardBody, Button, Link} from "@nextui-org/react";
 import Image from 'next/image'
-import { SiNextdotjs, SiTypescript, SiReact, SiAwsamplify, SiVuedotjs, SiAngularjs, SiAmazonaws, SiFastapi, 
+import { SiNextdotjs, SiTypescript, SiReact, SiVuedotjs, SiAngularjs, SiAmazonaws, SiFastapi, 
   SiPostgresql, SiMongodb,SiBlazor, SiGooglemaps, SiLoopback, SiExpress, SiCsharp,SiLinkedin, SiGithub, 
   SiTailwindcss, SiFirebase } from "react-icons/si";
 
@@ -58,11 +58,10 @@ export default function Home() {
                 <p className="text-3xl mt-5 ml-5">
                   This website was developed, and it&apos;s being maintained by me. It uses the following techologies:                  
                 </p>
-                <p className="text-3xl mt-5 mx-auto grid grid-cols-5 grid-rows-1 gap-x-10">
+                <p className="text-3xl mt-5 mx-auto grid grid-cols-4 grid-rows-1 gap-x-10">
                   <SiNextdotjs size="2em" title="Next"/>
                   <SiReact size="2em" title="React"/>
-                  <SiTypescript size="2em" title="Typescript"/>
-                  <SiAwsamplify size="2em" title="AWS Amplify"/>
+                  <SiTypescript size="2em" title="Typescript"/>                  
                   <SiTailwindcss size="2em" title="Tailwind"/>
                 </p>
               </div>             
