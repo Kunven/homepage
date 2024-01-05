@@ -41,7 +41,7 @@ export default function Home() {
                 width={400}
                 height={400}
                 alt="Failed Load"
-                src="/pfp.png"
+                src="/homepage/pfp.png"
               />
             </div>                      
           </CardBody>
